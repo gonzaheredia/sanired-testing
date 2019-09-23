@@ -1,0 +1,245 @@
+* {
+    margin:0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.navbar {
+    background: #ffffff;
+}
+
+.hamburger-menu {
+    padding: 10px;    
+    width: fit-content;
+}
+
+.hamburger-menu:hover, .menu{
+    display: block;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+}
+
+.hamburger-menu span:last-child {
+    margin-bottom: 0;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top:0;
+    background-color: #ffffff;
+    width: 70%;
+}
+
+.menu ul {
+    margin:0px;
+}
+
+.menu ul li{
+    list-style: none;
+    padding: 10px 0;
+}
+
+.cover {
+    width: 100%;
+    position: relative;
+}
+.cover img {
+    width:  100%;
+    object-fit: cover;
+    display:block;
+}
+
+.cover-titles {
+    position: absolute;
+    top: 0;
+    right:0;
+    left: 0;
+    bottom:0;
+    background: linear-gradient(to top, rgba(24,24,46, 0.9) 15%, rgba(24,24,46,0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.cover-titles h1 {
+    color: #ffffff;
+    font-weight:900;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.cover-titles h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.button{
+padding: 10px 20px;
+background-color: #eb2424;
+color: #ffffff;
+border: 0;
+font-size: 12px;
+outline: none;
+}
+
+.description p {
+    padding: 25px 16px;
+    font-size: 22px;
+    text-align: center;
+    color: #222;
+}
+
+.equipos {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.equipos img {
+    width:100%;
+    display:block;
+}
+
+.equipos__equipo-desobstructor--details{
+    background-color: #1f2033;
+    color: #ffffff;
+    padding: 0px 25px 0 16px;
+}
+
+.equipos__equipo-desobstructor--details h2 {
+    font-size: 26px;
+    padding: 20px 0;
+}
+
+.equipos__equipo-desobstructor--details p {
+    padding: 0 0 25px 16px;
+    border-left: 1px solid #ffffff;
+}
+
+.equipos__equipo-desobstructor--details-media-pulgada{
+    margin-left: 16px;
+    padding: 0 30px 0 16px;
+    border-left: 1px solid #e6af53;
+}
+
+.equipos__equipo-desobstructor--details-media-pulgada h3 {
+    padding: 20px 0;
+    color: #e6af53;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.equipos__equipo-desobstructor--details-media-pulgada p {
+    padding-bottom:25px;
+    color:#18182e;
+}
+
+.equipos__equipo-desobstructor--details-tres-cuartos-pulgada{
+    margin-left: 16px;
+    padding: 0 30px 0 16px;
+    border-left: 1px solid #18182e;
+}
+
+.equipos__equipo-desobstructor--details-tres-cuartos-pulgada h3 {
+    padding: 20px 0;
+    color: #18182e;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.equipos__equipo-desobstructor--details-tres-cuartos-pulgada p {
+    padding: 0px 16px 25px 0px;
+    color:#18182e;
+}
+
+.equipos__equipo-atmosferico--details{
+    background-color: #ffc832;
+    color: #ffffff;
+    padding: 0 30px 0 16px;
+}
+
+.equipos__equipo-atmosferico--details p {
+    padding: 0 0 25px 16px;
+    border-left: 1px solid #18182e;
+    color:#18182e;
+}
+
+.equipos__equipo-atmosferico--details h2 {
+    padding: 20px 0;
+    color: #18182e;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.servicios img {
+    width:100%;
+    display: block;
+}
+
+.servicios h2 {
+    padding: 20px 20px 0 20px;
+    color: #18182e;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.servicios__servicio-detail {
+    padding: 30px;
+    font-size: 18px;
+}
+
+.contact {
+    padding: 20px;
+    background-color: #cdcdcd;
+}
+
+.contact h2 {
+    margin-bottom:20px;
+    color: #18182e;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.contact__form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.contact__form input, textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    padding:5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer h4 {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #18182e;
+}
