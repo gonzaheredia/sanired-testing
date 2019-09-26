@@ -11,16 +11,20 @@ body {
 }
 
 .hamburger-menu {
-  padding: 10px;
   width: fit-content;
 }
 
-.hamburger-menu:hover,
-.menu {
-  display: block;
+.hamburger-menu > ul {
+  background-color: red;
+}
+
+.hamburger-menu > ul > li {
+  list-style: none;
+  padding: 10px;
 }
 
 .hamburger-menu span {
+  margin-left: 10px;
   display: block;
   width: 33px;
   height: 4px;
@@ -30,31 +34,18 @@ body {
   border-radius: 3px;
 }
 
+.hamburger-menu span:first-child {
+  margin-top: 10px;
+}
 .hamburger-menu span:last-child {
   margin-bottom: 0;
-}
-
-.menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  background-color: #ffffff;
-  width: 70%;
-}
-
-.menu ul {
-  margin: 0px;
-}
-
-.menu ul li {
-  list-style: none;
-  padding: 10px 0;
 }
 
 .cover {
   width: 100%;
   position: relative;
 }
+
 .cover img {
   width: 100%;
   object-fit: cover;
