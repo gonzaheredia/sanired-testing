@@ -15,15 +15,18 @@
     <header class="header">
         <nav class="navbar">
             <div class="hamburger-menu">
+                <label for="hamburger-menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
-                <ul>
-                    <li>Nosotros</li>
-                    <li>Equipo desobstructor</li>
-                    <li>Equipo atmosférico</li>
-                    <li>Servicios</li>
-                    <li>Contactanos</li>
+            </label>
+            <input type="checkbox" id="hamburger-menu-toggle" />
+                <ul class="hamburger-menu-items">
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#desobstructor">Equipo desobstructor</a></li>
+                    <li><a href="#atmosferico">Equipo atmosférico</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contactanos">Contactanos</a></li>
                 </ul>
             </div>                
         </nav>
@@ -37,6 +40,7 @@
 
         </section>
         <section class="description">
+            <a name="nosotros"></a>
             <p>SANIRED es una empresa familiar especializada en desobstrucciones, desagotes y
                 mantenimiento de
                 redes.</p>
@@ -44,6 +48,7 @@
     </header>
     <div class="main">
         <section class="equipos">
+                <a name="desobstructor"></a>
             <section class="equipos__equipo-desobstructor">
                 <div class="equipos__equipo-desobstructor--details">
                     <h2>EQUIPO DESOBSTRUCTOR</h2>
@@ -74,6 +79,7 @@
                 </div>
                 <img src="./img/Sanired_equipo_desobstructor_tres_cuartos.jpg" alt="Sanired - Equipo desobstructor de tres cuartos de pulgada">
             </section>
+            <a name="atmosferico"></a>
             <section class="equipos__equipo-atmosferico">
                 <div class="equipos__equipo-atmosferico--details">
                     <h2>EQUIPO ATMOSFÉRICO</h2>
@@ -85,6 +91,7 @@
                 <img src="./img/sanired_img_1.jpg" alt="Sanired - Equipo atmosférico">
             </section>
         </section>
+        <a name="servicios"></a>
         <section class="servicios">
             <h2>NUESTROS SERVICIOS</h2>
             <div class="servicios__servicio-detail">
