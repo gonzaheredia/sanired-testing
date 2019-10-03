@@ -165,38 +165,38 @@ body {
   border-left: 1px solid #ffffff;
 }
 
-.equipos__equipo-desobstructor--details-media-pulgada {
+.equipos__equipo-desobstructor-media-pulgada--details {
   margin-left: 16px;
   padding: 0 30px 0 16px;
   border-left: 1px solid #e6af53;
 }
 
-.equipos__equipo-desobstructor--details-media-pulgada h3 {
+.equipos__equipo-desobstructor-media-pulgada--details h3 {
   padding: 20px 0;
   color: #e6af53;
   font-size: 22px;
   font-weight: 400;
 }
 
-.equipos__equipo-desobstructor--details-media-pulgada p {
+.equipos__equipo-desobstructor-media-pulgada--details p {
   padding-bottom: 25px;
   color: #18182e;
 }
 
-.equipos__equipo-desobstructor--details-tres-cuartos-pulgada {
+.equipos__equipo-desobstructor-tres-cuartos-pulgada--details {
   margin-left: 16px;
   padding: 0 30px 0 16px;
   border-left: 1px solid #18182e;
 }
 
-.equipos__equipo-desobstructor--details-tres-cuartos-pulgada h3 {
+.equipos__equipo-desobstructor-tres-cuartos-pulgada--details h3 {
   padding: 20px 0;
   color: #18182e;
   font-size: 22px;
   font-weight: 400;
 }
 
-.equipos__equipo-desobstructor--details-tres-cuartos-pulgada p {
+.equipos__equipo-desobstructor-tres-cuartos-pulgada--details p {
   padding: 0px 16px 25px 0px;
   color: #18182e;
 }
@@ -220,7 +220,7 @@ body {
   font-weight: bold;
 }
 
-.servicios img {
+.servicios__listado-servicio img {
   width: 100%;
   display: block;
 }
@@ -232,7 +232,7 @@ body {
   font-weight: 400;
 }
 
-.servicios__servicio-detail {
+.servicios__listado-servicio--detail {
   padding: 30px;
   font-size: 18px;
 }
@@ -319,4 +319,114 @@ textarea {
 
 .footer__whatsapp--icon {
   margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .hamburger-menu span {
+    display: none;
+  }
+
+  .hamburger-menu > ul {
+    width: 100%;
+    max-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    right: auto;
+    -webkit-transition: none;
+  }
+
+  .hamburger-menu-items li {
+    font-size: 16px;
+    border: 0;
+  }
+
+  .cover-titles h1 {
+    font-size: 60px;
+  }
+
+  .cover-titles h2 {
+    font-size: 30px;
+  }
+
+  .equipos img {
+    width: 50%;
+  }
+
+  .equipos__equipo-desobstructor--details {
+    padding: 0px 40px 0 35px;
+  }
+
+  .equipos__equipo-desobstructor--details p {
+    border: 0;
+  }
+
+  .equipos__equipo-desobstructor-media-pulgada {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .equipos__equipo-desobstructor-media-pulgada--details,
+  .equipos__equipo-desobstructor-tres-cuartos-pulgada--details {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 35px;
+    border: 0;
+    margin: 0;
+  }
+
+  .equipos__equipo-desobstructor-tres-cuartos-pulgada {
+    display: flex;
+    align-items: center;
+  }
+
+  .equipos__equipo-atmosferico img {
+    width: 100%;
+  }
+
+  .servicios {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicios h2 {
+    margin-bottom: 20px;
+  }
+
+  .servicios__listado {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .servicios__listado-servicio {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex: 50%;
+  }
+
+  .servicios__listado-servicio--detail {
+    text-align: center;
+  }
+
+  .servicios__listado-servicio--detail p {
+    text-align: center;
+  }
+
+  .servicios__listado-servicio img {
+    width: 70%;
+    display: block;
+  }
+  .footer__details {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer__details--contact {
+    margin-right: 100px;
+  }
 }
