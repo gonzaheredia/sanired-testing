@@ -430,3 +430,145 @@ textarea {
     margin-right: 100px;
   }
 }
+
+@media (min-width: 1024px) {
+  .hamburger-menu > ul {
+    justify-content: flex-end;
+    right: auto;
+  }
+
+  .cover {
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .cover img {
+  }
+
+  .cover-titles {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to top,
+      rgba(24, 24, 46, 0.9) 100%,
+      rgba(24, 24, 46, 0) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .cover-titles h1 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 80px;
+    letter-spacing: 1px;
+  }
+
+  .cover-titles h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .equipos img {
+    width: 500px;
+    margin: 25px;
+  }
+  .equipos__equipo-desobstructor--details,
+  .equipos__equipo-atmosferico--details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+  .equipos__equipo-desobstructor--details p,
+  .equipos__equipo-atmosferico--details p {
+    width: 900px;
+    border: 0;
+  }
+  .equipos__equipo-atmosferico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .equipos__equipo-atmosferico img {
+    width: 40%;
+    margin: 20px 0;
+  }
+
+  .equipos__equipo-desobstructor-media-pulgada,
+  .equipos__equipo-desobstructor-tres-cuartos-pulgada {
+    justify-content: center;
+  }
+
+  .equipos__equipo-desobstructor-media-pulgada--details,
+  .equipos__equipo-desobstructor-tres-cuartos-pulgada--details {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0px;
+    border: 0;
+    margin: 0;
+  }
+
+  .equipos__equipo-desobstructor-media-pulgada--details h3,
+  .equipos__equipo-desobstructor-tres-cuartos-pulgada--details h3 {
+    font-size: 35px;
+  }
+  .servicios {
+    align-items: center;
+  }
+  .servicios h2 {
+    border-top: 1px solid #ccc;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .servicios__listado-servicio--detail {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .servicios__listado-servicio--detail p {
+    text-align: center;
+    font-size: 22px;
+    width: 60%;
+  }
+
+  .servicios__listado-servicio img {
+    width: 60%;
+    display: block;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__form {
+    width: 75%;
+    display: flex;
+  }
+  .contact__form input,
+  .contact__form textarea {
+  }
+
+  .footer__details {
+    justify-content: space-evenly;
+  }
+}
