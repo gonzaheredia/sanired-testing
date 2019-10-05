@@ -123,6 +123,7 @@ body {
 }
 
 .button {
+  margin-bottom: 15px;
   padding: 10px 20px;
   background-color: #eb2424;
   color: #ffffff;
@@ -288,12 +289,12 @@ textarea {
 
 .footer__details h2 {
   color: #ffffff;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .footer__details h3 {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 100;
 }
 
@@ -429,6 +430,14 @@ textarea {
   .footer__details--contact {
     margin-right: 100px;
   }
+
+  .footer__details--contact h2 {
+    font-size: 40px;
+  }
+
+  .footer__details--contact h3 {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -440,9 +449,6 @@ textarea {
   .cover {
     height: 600px;
     overflow: hidden;
-  }
-
-  .cover img {
   }
 
   .cover-titles {
@@ -555,17 +561,16 @@ textarea {
     width: 60%;
     display: block;
   }
+
   .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .contact__form {
     width: 75%;
     display: flex;
-  }
-  .contact__form input,
-  .contact__form textarea {
   }
 
   .footer__details {
