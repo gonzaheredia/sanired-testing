@@ -269,6 +269,10 @@ textarea {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.contact__form--send-message {
+  display: none;
+}
+
 .footer {
   background-color: #222222;
   color: #ffffff;
