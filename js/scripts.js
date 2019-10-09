@@ -1,6 +1,6 @@
 $("#contact_form").submit(function(e) {
   e.preventDefault();
-  contactFormSuccess();
+  submitContactForm();
 });
 
 function submitContactForm() {
