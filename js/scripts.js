@@ -1,6 +1,6 @@
 $("#contact_form").submit(function(e) {
   e.preventDefault();
-  contactFormSuccess();
+  submitContactForm();
 });
 
 function submitContactForm() {
@@ -8,8 +8,6 @@ function submitContactForm() {
   var email = $("#contact_email").val();
   var phone = $("#contact_phone").val();
   var message = $("#contact_message").val();
-
-  console.log(name);
 
   $.ajax({
     type: "POST",
@@ -24,9 +22,12 @@ function submitContactForm() {
       "&message=" +
       message,
     success: function(text) {
-      if (text) {
-        console.log(text);
+      if (text == "success") {
         contactFormSuccess();
+      } else {
+        alert(
+          "No se ha podido enviar su consulta. Puede contactarnos al 351 664-5414 / 351 354-7538"
+        );
       }
     }
   });

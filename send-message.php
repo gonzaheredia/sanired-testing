@@ -22,7 +22,7 @@ $headers = 'From: ' . $name . "<" . $email . ">" . "\r\n" .
 $success = mail($emailTo, $subject, $body, $headers);
 
 if ($success){
-    echo $body;
+    echo "success";
 }else {
     echo "invalid";
 }
