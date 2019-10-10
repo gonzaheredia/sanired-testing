@@ -5,28 +5,24 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 $emailTo = "herediagonza@gmail.com";
-$subject = "Mensaje recibido desde Sanired.com.ar";
-
-$body .= "Nombre: "; 
-$body .= $name; 
-$body .= "\n"; 
-
-$body .= "Email: "; 
-$body .= $email; 
-$body .= "\n"; 
+$subject = "Mensaje nuevo desde Sanired.com.ar";
 
 $body .= "Teléfono: "; 
 $body .= $phone; 
 $body .= "\n"; 
+$body .= "\n"; 
 
-$body .= "Mensaje: "; 
 $body .= $message; 
 $body .= "\n"; 
 
-$success = mail($emailTo, $subject, $body, "From:" . $email);
+$headers = 'From: ' . $name . "<" . $email . ">" . "\r\n" .
+    'Reply-To: ' . $from . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+$success = mail($emailTo, $subject, $body, $headers);
 
 if ($success){
-    echo "success";
+    echo $body;
 }else {
     echo "invalid";
 }

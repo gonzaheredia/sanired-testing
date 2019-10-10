@@ -227,6 +227,7 @@ body {
 }
 
 .servicios h2 {
+  border-top: 1px solid #ccc;
   padding: 20px 20px 0 20px;
   color: #18182e;
   font-size: 22px;
@@ -271,6 +272,7 @@ textarea {
 
 .contact__form--send-message {
   display: none;
+  font-size: 18px;
 }
 
 .footer {
@@ -399,6 +401,7 @@ textarea {
   }
 
   .servicios h2 {
+    border-top: 1px solid #ccc;
     margin-bottom: 20px;
   }
 
@@ -531,7 +534,7 @@ textarea {
   .equipos__equipo-desobstructor-tres-cuartos-pulgada--details {
     box-sizing: border-box;
     width: 50%;
-    padding: 0px;
+    padding: 30px;
     border: 0;
     margin: 0;
   }

@@ -1,6 +1,6 @@
 $("#contact_form").submit(function(e) {
   e.preventDefault();
-  submitContactForm();
+  contactFormSuccess();
 });
 
 function submitContactForm() {
@@ -8,6 +8,8 @@ function submitContactForm() {
   var email = $("#contact_email").val();
   var phone = $("#contact_phone").val();
   var message = $("#contact_message").val();
+
+  console.log(name);
 
   $.ajax({
     type: "POST",
@@ -22,7 +24,8 @@ function submitContactForm() {
       "&message=" +
       message,
     success: function(text) {
-      if (text == "success") {
+      if (text) {
+        console.log(text);
         contactFormSuccess();
       }
     }
@@ -30,5 +33,7 @@ function submitContactForm() {
 }
 
 function contactFormSuccess() {
-  $(".contact__form--send-message").css("display", "block");
+  $("#contact_form").slideUp(function() {
+    $(".contact__form--send-message").slideDown();
+  });
 }
