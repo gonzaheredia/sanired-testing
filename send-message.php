@@ -4,7 +4,7 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
-$emailTo = "herediagonza@gmail.com";
+$emailTo = "agaboardi@hotmail.com";
 $subject = "Mensaje nuevo desde Sanired.com.ar";
 
 $body .= "Teléfono: "; 

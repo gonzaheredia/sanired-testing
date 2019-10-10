@@ -80,6 +80,7 @@ body {
 .cover {
   width: 100%;
   position: relative;
+  text-shadow: 1px 2px 2px #000000;
 }
 
 .cover img {
@@ -353,6 +354,7 @@ textarea {
 
   .cover-titles h1 {
     font-size: 60px;
+    text-shadow: none;
   }
 
   .cover-titles h2 {
